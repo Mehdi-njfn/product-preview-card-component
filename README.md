@@ -1,0 +1,1 @@
+Hi wellcom, i'm happy for your visit to this repository , this product preview card is done with html ,css and js, you can run main branch and see result , also the screenshot of results is in design folder, thank you. 
