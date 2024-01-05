@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@100&display=swap');
+
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    background-color: #fff;
+    width: 375px;
+    height: 100%;
+    border-radius: 15px;
+}
+.img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+p, #col2, button{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+#per{
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.title{
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-right: 15px;
+}
+#txt{
+    font-size: 16px;
+    text-align: start;
+	text-transform:capitalize;
+    width: 96%;
+}
+#col1{
+    width: 50%;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    text-align: start;
+}
+#col2{
+    width: 50%;
+    text-decoration-line: line-through;
+}
+#col1 , #col2{
+    display: flex;
+    align-items: center;    
+}
+button{
+    height: 50px;
+    border-radius: 10px;
+    margin: auto;
+    width: 330px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+}
+.row{
+    width:100% ;
+}
+#btn{
+    display: flex;
+    justify-content: start;
+    margin-right: 25px;    
+}
+i{
+    color:#fff;
+}
+
+@media screen and (min-width:769px) {
+    #card{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: auto auto auto;
+        width: 700px;
+    }
+    .img{
+        height: 100%;
+        content: url('./images/image-product-desktop.jpg');
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    .container{
+        width: 350px;
+    }
+    .container *{
+        margin-top: 15px;
+    }
+    #btn{
+        width: 334px;
+    }
+    button:hover{
+        background-color: hsl(158, 48%, 23%);
+        transition: 0.8s;
+    }
+}
